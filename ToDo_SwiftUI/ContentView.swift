@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ListRow(task: "筋トレ")
+                ListRow(task: "昼寝")
+                ListRow(task: "勉強")
+                Text("+").font(.title)
+            }
+            .navigationTitle("Tasks")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Text("Delete").foregroundColor(Color.red)
+                }
+            }
         }
-        .padding()
     }
 }
 
