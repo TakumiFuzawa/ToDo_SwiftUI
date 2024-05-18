@@ -30,10 +30,20 @@ struct ContentView: View {
             .navigationTitle("Tasks")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Text("Delete").foregroundColor(Color.red)
+                    Button(action: {
+                        DeleteTask()
+                    })
+                    {
+                        Text("Delete").foregroundColor(Color.red)
+                    }
                 }
             }
         }
+    }
+    //deleteボタンを押下したときの処理
+    func DeleteTask(){
+        let necessaryTask = self.userData.tasks.filter({!$0.checked})
+        self.userData.tasks = necessaryTask
     }
 }
 
