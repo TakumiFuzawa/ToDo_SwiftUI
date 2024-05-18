@@ -16,11 +16,11 @@ struct ListRow: View {
         HStack {
             if isCheck {
                 Text("☑")
+                Text(task).strikethrough().fontWeight(.ultraLight)
             } else {
                 Text("□")
+                Text(task)
             }
-            
-            Text(task)
         }
     }
 }

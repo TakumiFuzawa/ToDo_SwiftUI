@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+   @ObservedObject var userData = UserData()
+    
     var body: some View {
         NavigationView {
             List {
-                ListRow(task: "筋トレ", isCheck: true)
-                ListRow(task: "昼寝", isCheck: true)
-                ListRow(task: "勉強", isCheck: false)
+                ForEach(userData.tasks) { task in
+                    Button(action: {
+                        guard let index = self.userData.tasks.firstIndex(of: task) else{
+                            return
+                        }
+                        self.userData.tasks[index].checked.toggle()
+                    })
+                    {
+                        ListRow(task: task.titel, isCheck: task.checked)
+                    }
+                }
                 Text("+").font(.title)
             }
             .navigationTitle("Tasks")
