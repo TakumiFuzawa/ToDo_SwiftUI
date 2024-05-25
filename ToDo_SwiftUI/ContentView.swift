@@ -25,7 +25,16 @@ struct ContentView: View {
                         ListRow(task: task.titel, isCheck: task.checked)
                     }
                 }
-                Text("+").font(.title)
+                if self.userData.isEditing {
+                    Draft()
+                }else{
+                    Button(action: {
+                        self.userData.isEditing = true
+                    })
+                    {
+                        Text("+").font(.title)
+                    }
+                }
             }
             .navigationTitle("Tasks")
             .toolbar {

@@ -15,6 +15,7 @@
 		D62CF0CB2BED0BF800676F0F /* ToDo_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF0CA2BED0BF800676F0F /* ToDo_SwiftUIUITests.swift */; };
 		D62CF0CD2BED0BF800676F0F /* ToDo_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF0CC2BED0BF800676F0F /* ToDo_SwiftUIUITestsLaunchTests.swift */; };
 		D62CF0DA2BED146E00676F0F /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62CF0D92BED146E00676F0F /* ListRow.swift */; };
+		D6E012C12C01BDF8005512A2 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E012C02C01BDF8005512A2 /* Draft.swift */; };
 		D6E37B302BF64E7100E7594F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37B2F2BF64E7100E7594F /* UserData.swift */; };
 		D6E37B322BF64F8000E7594F /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37B312BF64F8000E7594F /* UserTask.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		D62CF0CA2BED0BF800676F0F /* ToDo_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		D62CF0CC2BED0BF800676F0F /* ToDo_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D62CF0D92BED146E00676F0F /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		D6E012C02C01BDF8005512A2 /* Draft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
 		D6E37B2F2BF64E7100E7594F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D6E37B312BF64F8000E7594F /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 			children = (
 				D62CF0AF2BED0BF600676F0F /* ToDo_SwiftUIApp.swift */,
 				D62CF0B12BED0BF600676F0F /* ContentView.swift */,
+				D6E012C02C01BDF8005512A2 /* Draft.swift */,
 				D6E37B312BF64F8000E7594F /* UserTask.swift */,
 				D6E37B2F2BF64E7100E7594F /* UserData.swift */,
 				D62CF0D92BED146E00676F0F /* ListRow.swift */,
@@ -269,6 +272,7 @@
 				D6E37B322BF64F8000E7594F /* UserTask.swift in Sources */,
 				D62CF0B22BED0BF600676F0F /* ContentView.swift in Sources */,
 				D62CF0B02BED0BF600676F0F /* ToDo_SwiftUIApp.swift in Sources */,
+				D6E012C12C01BDF8005512A2 /* Draft.swift in Sources */,
 				D6E37B302BF64E7100E7594F /* UserData.swift in Sources */,
 				D62CF0DA2BED146E00676F0F /* ListRow.swift in Sources */,
 			);
